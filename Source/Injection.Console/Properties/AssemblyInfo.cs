@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -7,6 +8,9 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyDescription("Allows assembly injection logic"
                                + " to be exercised from a terminal")]
+
+[assembly: CLSCompliant(true)]
+
 [assembly: ComVisible(false)]
 
 [assembly: AssemblyVersion("1.0.0.0")]

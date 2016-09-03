@@ -11,6 +11,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whimsy.Precondition.Injecti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whimsy.Precondition.Injection.Console", "Source\Injection.Console\Whimsy.Precondition.Injection.Console.csproj", "{153F7DD8-F246-4CA4-82E0-ACEC274163BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC1ECEDE-F9A8-4ACA-BCB2-000C637C36BF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whimsy.Precondition.Injection.Core.Tests.Unit", "Tests\Injection.Core.Unit\Whimsy.Precondition.Injection.Core.Tests.Unit.csproj", "{F4FD7DED-CF39-48CC-B198-4E7AED23BAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whimsy.Precondition.Injection.Core.Tests.Integration.CSharp.Debug", "Tests\Injection.Core.Integration.CSharp.Debug\Whimsy.Precondition.Injection.Core.Tests.Integration.CSharp.Debug.csproj", "{84F54BF6-38A1-4FBE-BE10-44DFD93F66CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{153F7DD8-F246-4CA4-82E0-ACEC274163BA} = {153F7DD8-F246-4CA4-82E0-ACEC274163BA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whimsy.Precondition.Injection.Core.Tests.Integration.CSharp.Release", "Tests\Injection.Core.Integration.CSharp.Release\Whimsy.Precondition.Injection.Core.Tests.Integration.CSharp.Release.csproj", "{32B66B00-71D4-11E6-BDF4-0800200C9A66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{153F7DD8-F246-4CA4-82E0-ACEC274163BA} = {153F7DD8-F246-4CA4-82E0-ACEC274163BA}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,8 +46,25 @@ Global
 		{153F7DD8-F246-4CA4-82E0-ACEC274163BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{153F7DD8-F246-4CA4-82E0-ACEC274163BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{153F7DD8-F246-4CA4-82E0-ACEC274163BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4FD7DED-CF39-48CC-B198-4E7AED23BAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FD7DED-CF39-48CC-B198-4E7AED23BAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FD7DED-CF39-48CC-B198-4E7AED23BAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FD7DED-CF39-48CC-B198-4E7AED23BAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F54BF6-38A1-4FBE-BE10-44DFD93F66CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F54BF6-38A1-4FBE-BE10-44DFD93F66CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F54BF6-38A1-4FBE-BE10-44DFD93F66CE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F54BF6-38A1-4FBE-BE10-44DFD93F66CE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{32B66B00-71D4-11E6-BDF4-0800200C9A66}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{32B66B00-71D4-11E6-BDF4-0800200C9A66}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{32B66B00-71D4-11E6-BDF4-0800200C9A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B66B00-71D4-11E6-BDF4-0800200C9A66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4FD7DED-CF39-48CC-B198-4E7AED23BAC6} = {F776ACD1-9CC2-4465-AD13-45043F225670}
+		{84F54BF6-38A1-4FBE-BE10-44DFD93F66CE} = {F776ACD1-9CC2-4465-AD13-45043F225670}
+		{32B66B00-71D4-11E6-BDF4-0800200C9A66} = {F776ACD1-9CC2-4465-AD13-45043F225670}
 	EndGlobalSection
 EndGlobal
