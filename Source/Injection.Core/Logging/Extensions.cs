@@ -3,11 +3,6 @@ namespace Whimsy.Precondition.Injection.Core.Logging
 {
     public static class Extensions
     {
-        public static void Trace(this ILog log, string message)
-        {
-            log.Log(LogLevel.Trace, message);
-        }
-
         public static void Debug(this ILog log, string message)
         {
             log.Log(LogLevel.Debug, message);

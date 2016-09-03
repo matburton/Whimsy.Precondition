@@ -11,7 +11,7 @@
     <AssemblyName>$(RootNamespace).Release</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>bin</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -41,4 +41,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PreconditionInjection" AfterTargets="Compile">
+    <Message Importance="High" Text="Injecting preconditions into compiled assembly " />
+    <Exec Command="..\..\Source\Injection.Console\bin\Whimsy.Precondition.Injection.Console.exe $(OutputPath)\$(AssemblyName).dll" />
+  </Target>
 </Project>
