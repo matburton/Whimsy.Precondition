@@ -1,0 +1,21 @@
+
+# Binaries
+*.bak
+*.dll
+*.exe
+*.nupkg
+
+# Temporary files
+*.obj
+*.pdb
+
+# Builds
+bin/
+obj/
+packages/
+
+# Local config
+.vs/
+_ReSharper*/
+*.suo
+*.user
