@@ -1,0 +1,13 @@
+name: test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    steps:
+      - name: green
+        run: |
+          set -euxo pipefail
+          echo "Sucess"
