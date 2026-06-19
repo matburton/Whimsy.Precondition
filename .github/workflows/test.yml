@@ -3,6 +3,9 @@ name: test
 on:
   workflow_dispatch:
 
+concurrency:
+  group: oneatatimeplz
+
 jobs:
   do:
     runs-on: ubuntu-latest
@@ -10,4 +13,5 @@ jobs:
       - name: green
         run: |
           set -euxo pipefail
-          echo "Sucess"
+          sleep 30
+          echo "Success"
